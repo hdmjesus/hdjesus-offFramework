@@ -1,0 +1,109 @@
+%bar {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 40px;
+  position: relative;
+  margin-bottom: 15px;
+  border-radius: 3px;
+  background-color: $gray-medium;
+}
+
+%title {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 110px;
+  font-weight: bold;
+  font-size: 13px;
+  color: #ffffff;
+}
+
+.javascript {
+  background-color: $javascript;
+}
+.javascriptLight {
+  background-color: $javascriptLight;
+}
+.webpacks {
+  background-color: $webpacks;
+}
+.webpacksLight {
+  background-color: $webpacksLight;
+}
+
+.css {
+  background-color: $css;
+}
+
+.cssLight {
+  background-color: $cssLight;
+}
+.sass {
+  background-color: $sass;
+}
+.sassLight {
+  background-color: $sassLight;
+}
+
+.tailwind {
+  background-color: $tailwind;
+}
+.tailwindLight {
+  background-color: $tailwindLight;
+}
+
+.bootstrap {
+  background-color: $bootstrap;
+}
+
+.bootstrapLight {
+  background-color: $bootstrapLight;
+}
+
+.react {
+  background-color: $react;
+}
+
+.reactLight {
+  background-color: $reactLight;
+}
+
+.redux {
+  background-color: $redux;
+}
+
+.reduxLight {
+  background-color: $reduxLight;
+}
+.tecnologies {
+  margin-bottom: 50px;
+
+  .skillbar {
+    @extend %bar;
+    &__title {
+      @extend %title;
+      border-radius: 3px 0px 0px 3px;
+
+      span {
+        display: block;
+        padding: 0 20px;
+        height: 40px;
+        line-height: 40px;
+      }
+    }
+
+    &__bar {
+      height: 40px;
+      border-radius: 3px;
+    }
+    &__percent {
+      position: absolute;
+      right: 10px;
+      top: 0;
+      font-size: 11px;
+      height: 40px;
+      line-height: 35px;
+    }
+  }
+}

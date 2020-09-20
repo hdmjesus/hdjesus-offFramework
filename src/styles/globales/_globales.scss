@@ -1,0 +1,99 @@
+/*------------------------------------*\
+    Variables
+\*------------------------------------*/
+
+/**
+ * Fonts
+ */
+
+$font-title: 'Marmelad', sans-serif;
+$font-body: 'Ubuntu', sans-serif;
+
+/*------------------------------------*\
+    Colores
+\*------------------------------------*/
+
+$color-body: #f6f9fc;
+$color-primary: #00c02acc;
+$color-second: #32325d;
+$color-second-dark: #23bceb;
+
+/**
+ * Colors-variacion
+ */
+
+$primary-variation1: #34e35d80;
+$primary-variation2: #54ff7c7d;
+$primary-variation3: #34e35b33;
+
+/**
+ * Colors-brands
+ */
+$javascript: #d4d234;
+$javascriptLight: #e9e519;
+$webpacks: #7ed2fe;
+$webpacksLight: #75b3d4;
+$css: #0095e5;
+$cssLight: #5fc7ff;
+$sass: #db4494;
+$sassLight: #f781c0;
+$tailwind: #00bbbb;
+$tailwindLight: #6fe2e2;
+$bootstrap: #640078;
+$bootstrapLight: #b942d1;
+$react: #00d2ff;
+$reactLight: #94e0f1;
+$redux: #8800bd;
+$reduxLight: #c365e9;
+
+/**
+ * Color-black-white
+ */
+
+$black: #001a06;
+$gray-black: #211f1f;
+$gray-medium: #c4c4cab8;
+$gray: #989898;
+$gray-light: #dbdbdb;
+$white: #fff;
+
+/**
+ * Colors-darkMode
+ */
+$button-night: #343d5b;
+$button-day: #e0d75b;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 90%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+p {
+  body.dark & {
+    color: $white;
+  }
+}
+
+h2 {
+  body.dark & {
+    color: $color-second-dark;
+  }
+}
+
+h3 {
+  body.dark & {
+    color: $color-primary;
+  }
+}
+h4 {
+  body.dark & {
+    color: $white;
+  }
+}

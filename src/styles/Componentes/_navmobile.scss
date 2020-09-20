@@ -1,0 +1,52 @@
+.enlances {
+  z-index: 2;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  right: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $color-second;
+  transition: all 1s ease;
+  overflow: hidden;
+
+  .redes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    background-color: $color-second;
+  }
+}
+
+.enlances ul {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
+}
+
+.enlances ul li {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.enlances ul li a {
+  color: $color-body;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: $font-body;
+}
+
+.uno {
+  -webkit-clip-path: circle(0% at 100% 0%);
+  clip-path: circle(0% at 100% 0%);
+}
+
+.dos {
+  -webkit-clip-path: circle(150% at 100% 0%);
+  clip-path: circle(150% at 100% 0%);
+}

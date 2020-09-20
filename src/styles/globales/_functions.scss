@@ -1,0 +1,20 @@
+// DA OPACIDAD A CIERTO ELEMENTO
+@function get-opacity($color, $amount) {
+    @return rgba($color, $amount);
+}
+
+//FUNCION QUE PASA DE PIXELS A REM
+@function calculateRem($size) {
+    $remSize: $size / 16px;
+    @return $remSize * 1rem;
+}
+
+// SEGUN EL TITLO QUE SEA, DA EL TAMAÑO DE LA FUENTE
+@each $header,
+$size in (h1: 28px, h2: 24px, h3: 20px, h4:16px, h5:14px, h6:12px) {
+    #{$header} {
+        font-size: $size;
+        @include titulos($font-title);
+        margin: 0;
+    }
+}

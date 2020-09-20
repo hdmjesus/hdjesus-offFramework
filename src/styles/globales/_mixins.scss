@@ -1,0 +1,18 @@
+// VERIFICA SI ES DETERMINADA FUENTE PARA COLOCAR CIERTOS ESTILOS
+@mixin titulos($fuente) {
+    @if $fuente==$font-body {
+        font-family: $font-body;
+    }
+    @else {
+        font-family: $font-title;
+        // text-transform: uppercase;
+        font-weight: 700;
+    }
+}
+
+// COLOCA EL TAMAÑO DE LETRA EN REM AL IGUAL QUE EL INTERLINEADO SEGUN EL FONT-SIZE
+@mixin font-size($size) {
+    font-size: $size;
+    font-size: calculateRem($size);
+    line-height: calculateRem($size)*1.5;
+}

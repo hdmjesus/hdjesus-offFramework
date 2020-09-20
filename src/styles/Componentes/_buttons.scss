@@ -1,0 +1,117 @@
+/*--------------------------------------*\
+    CALL TO ACTION , WE DO A PROJECT
+\*--------------------------------------*/
+
+.button-service {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 40px;
+  margin: 20px 0 20px 0px;
+  border: 1px solid $color-second;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.4s;
+  a {
+    text-decoration: none;
+    color: $black;
+    @include font-size(10px);
+    text-transform: uppercase;
+  }
+  body.dark & {
+    border: 1px solid $color-second-dark;
+    a {
+      color: $white;
+    }
+  }
+}
+
+.button-service:hover {
+  background-color: $color-second;
+  a {
+    color: $white;
+  }
+  body.dark & {
+    background-color: $color-second-dark;
+    a {
+      color: $white;
+    }
+  }
+}
+
+/*--------------------------------------*\
+    CALL TO ACTION , WE DO A PROJECT
+\*--------------------------------------*/
+
+/*--------------------------------------*\
+    BUTTONS PRINCIPALES
+\*--------------------------------------*/
+
+.button-primary {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: $black;
+  border-radius: 3px;
+  background-color: $primary-variation2;
+  body.dark & {
+    border: 1px solid $primary-variation2;
+    background-color: transparent;
+    color: $white;
+  }
+}
+
+.button-second {
+  display: inline-block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  text-decoration: none;
+  color: $black;
+  border: 1px solid $color-second;
+  border-radius: 3px;
+  body.dark & {
+    border: 1px solid $color-second-dark;
+    color: $white;
+  }
+}
+
+/*--------------------------------------*\
+    BUTTONS PRINCIPALES
+\*--------------------------------------*/
+
+/*--------------------------------------*\
+    BUTTON FORM
+\*--------------------------------------*/
+
+.btn-form {
+  display: block;
+  padding: 12px;
+  max-width: 300px;
+  width: 100%;
+  height: 60px;
+  border-radius: 5px;
+  border: none;
+  text-align: center;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  font-family: $font-title;
+  background: transparent
+    linear-gradient(
+      90deg,
+      #54ff7c80 0%,
+      #65d08782 10%,
+      #4917b08a 86%,
+      #4917b089 100%
+    )
+    0% 0% no-repeat padding-box;
+  @include font-size(24px);
+}
+/*--------------------------------------*\
+    BUTTON FORM
+\*--------------------------------------*/

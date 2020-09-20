@@ -1,0 +1,32 @@
+.services {
+	margin-top: 40px;
+	position: relative;
+	.service {
+		.figure-service {
+			display: block;
+			width: 190px;
+			height: 100px;
+			position: absolute;
+			left: 0;
+			border-radius: 0 64px 64px 0;
+			background-color: $primary-variation1;
+			opacity: 1;
+		}
+		&__image {
+			display: inline-block;
+			position: relative;
+			width: 200px;
+			height: 100px;
+			img {
+				position: absolute;
+				left: 30px;
+				top: 25px;
+			}
+		}
+		&__description {
+			text-align: center;
+			padding: 20px;
+			margin-top: 30px;
+		}
+	}
+}

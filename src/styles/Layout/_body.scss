@@ -1,0 +1,11 @@
+body {
+  background-color: $color-body;
+  color: $black;
+  transition: 0.3s ease all;
+  @include font-size(14px);
+  @include titulos($font-body);
+
+  &.dark {
+    background-color: rgba(0, 0, 0, 0.774);
+  }
+}

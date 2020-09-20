@@ -1,0 +1,54 @@
+.information {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__image {
+		width: 170px;
+		height: 130px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__descriptions {
+		text-align: center;
+		h2 {
+			margin-top: 30px;
+			color: $color-primary;
+			@include titulos($font-title);
+		}
+		p {
+			margin-top: 10px;
+			text-align: center;
+		}
+	}
+}
+
+.information__form {
+	margin: 0 auto;
+	width: 80%;
+}
+
+.inputs {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	.btn-form {
+		margin-top: 30px;
+	}
+}
+
+input[type='text'],
+input[type='email'] {
+	max-width: 500px;
+	width: 100%;
+	margin: 10px;
+	padding: 20px 20px;
+	padding-left: 10px;
+	background-color: $color-body;
+	border: none;
+	border-bottom: 1px solid $gray;
+	outline: none;
+}
