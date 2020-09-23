@@ -1,23 +1,27 @@
+// import cv from '../../statics/docs/cv:jesus.pdf';
+import imagensita from '../../statics/images/work-home.svg';
+import Jesus from '../../statics/images/yo.png';
+
 const Hero = () => {
-  const view = `/
+  const view = `
 <section class="hero" id="">
       <hr class="line--header" />
       <div class="container">
         <div class="hero__skills">
           <div class="hero__curriculum">
-            <a href="../src/docs/cv:jesus.pdf" download="cv: Jesus Hernandez">
+            <a href="" download="cv: Jesus Hernandez">
               <h6>Hoja de vida</h6>
             </a>
           </div>
 
           <figure class="hero__work">
-            <img src="../src/images/work-home.svg" alt="Espacio de trabajo" />
+            <img src="${imagensita}" alt="Espacio de trabajo" />
           </figure>
         </div>
 
         <div class="jesusH">
           <figure class="jesusH__image">
-            <img src="../src/images/yo.png" alt="Jesus Hernandez" />
+            <img src="${Jesus}" alt="Jesus Hernandez" />
           </figure>
 
           <div class="jesusH__description">

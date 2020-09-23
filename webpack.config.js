@@ -40,23 +40,24 @@ const config = {
         ],
         include: /\.module\.css$/,
       },
+      // {
+      //   test: /\.(png|gif|jpg|svg|webp)$/,
+      //   use: [
+      //     {
+      //       loader: 'file-loader',
+      //       options: { name: 'assets/[hash].[ext]' },
+      //     },
+      //   ],
+      // },
+
       {
-        test: /\.(png|gif|jpg|svg)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: { name: 'assets/[hash].[ext]' },
-          },
-        ],
-      },
-      {
-        test: /\.(png|gif|jpg|svg)$/,
+        test: /\.(png|gif|jpg|svg|webp)$/,
         use: [
           {
             loader: 'url-loader',
-            options: {
-              mimetype: 'image/png',
-            },
+            // options: {
+            //   mimetype: 'image/png',
+            // },
           },
         ],
       },

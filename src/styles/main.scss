@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    $PARTIALS
+\*------------------------------------*/
+
+/**
+ * All files to be compiled
+ */
+
+@import './Sass/base/normalice';
+@import './Sass/base/breackpoints';
+@import './Sass/globales/grid';
+
+/**
+* Scss Libraries, mixins, functions and any Scss focused logic
+**/
+
+@import './Sass/globales/globales';
+@import './Sass/globales/mixins';
+@import './Sass/globales/functions';
+
+/**
+* Base
+**/
+
+/**
+* HTML elements
+**/
+
+@import './Sass/Componentes/switch';
+@import './Sass/Componentes/lines';
+@import './Sass/Componentes/buttons';
+@import './Sass/Componentes/banners';
+@import './Sass/Componentes/navmobile';
+@import './Sass/Componentes/whatappAPI';
+
+/**
+* Layout and general styles
+**/
+@import './Sass/Layout/body';
+@import './Sass/Layout/header';
+@import './Sass/Layout/footer';
+/**
+* Componets used for layouts, headers, articles, etc...
+**/
+@import './Sass/Pages/home';
+@import './Sass/Pages/portafolio';
+@import './Sass/Pages/blog';
+@import './Sass/Pages/aboutme';
+@import './Sass/Pages/form';

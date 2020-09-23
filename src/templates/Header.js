@@ -2,7 +2,7 @@ const Header = () => {
   const view = `
  <header class="header" id="header">
       <figure class="header__logo">
-        <img src="../src/images/Assets/hdjesus.png" alt="hdjesus" />
+        <img src="../src/images/Assets/hdjesus.png" alt="hdjesus"/>
       </figure>
 
       <div class="header__components">
@@ -19,7 +19,7 @@ const Header = () => {
             </li>
             <li>
               <a href="">
-                <i class="fa fa-briefcase" aria-hidden="true"></i> |
+                <i class="fa fa-briefcase" aria-hidden="true" id="portafolio"></i> |
                 Portafolio</a
               >
             </li>

@@ -1,3 +1,7 @@
+import resposibeDesing from '../../statics/images/undraw_progressive_app_m9ms.svg';
+import codeSemanting from '../../statics/images/undraw_google_analytics_a57d.svg';
+import aplicationScaling from '../../statics/images/undraw_clean_up_ucm0.svg';
+
 const Services = () => {
   const view = `
 <section class="services">
@@ -9,7 +13,7 @@ const Services = () => {
 
             <div class="service__image">
               <img
-                src="../src/images/undraw_progressive_app_m9ms.svg"
+                src="${resposibeDesing}"
                 alt="Responsibe desing"
               />
             </div>
@@ -32,7 +36,7 @@ const Services = () => {
 
             <div class="service__image">
               <img
-                src="../src/images/undraw_google_analytics_a57d.svg"
+                src="${codeSemanting}"
                 alt="Responsibe desing"
               />
             </div>
@@ -53,7 +57,7 @@ const Services = () => {
 
             <div class="service__image">
               <img
-                src="../src/images/undraw_clean_up_ucm0.svg"
+                src="${aplicationScaling}"
                 alt="Responsibe desing"
               />
             </div>
@@ -70,7 +74,7 @@ const Services = () => {
       </div>
     </section>
 `;
-  return views;
+  return view;
 };
 
 export default Services;
