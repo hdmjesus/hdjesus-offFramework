@@ -1,15 +1,18 @@
+import facebook from '../statics/icons/face.webp';
+import instagram from '../statics/icons/ig.webp';
+import twitter from '../statics/icons/twitter.webp';
+import linkedin from '../statics/icons/lik.webp';
+import github from '../statics/icons/gh.webp';
 const Footer = () => {
   const view = ` 
 	 <div class="footer_redes">
         <div class="container">
           <div class="social-list">
-            <a href="https://chatwith.io/s/5f1a3e1ceeb8d"
-              ><img src="../src/images/Assets/face.png" alt=""
-            /></a>
-            <a href=""><img src="../src/images/Assets/ig.png" alt="" /></a>
-            <a href=""><img src="../src/images/Assets/twitter.png" alt="" /></a>
-            <a href=""><img src="../src/images/Assets/lik.png" alt="" /></a>
-            <a href=""><i class="fab fa-github"></i></a>
+            <a href="https://chatwith.io/s/5f1a3e1ceeb8d"><img src="${facebook}" alt="facebook"/></a>
+            <a href=""><img src="${instagram}" alt="instagram" /></a>
+            <a href=""><img src="${twitter}" alt="twitter" /></a>
+            <a href=""><img src="${linkedin}" alt="linkedin" /></a>
+            <a href=""><img src="${github}" alt="github" /></i></a>
           </div>
         </div>
       </div>

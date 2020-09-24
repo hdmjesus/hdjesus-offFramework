@@ -1,8 +1,15 @@
+import logo from '../statics/icons/hdjesus.png';
+import facebook from '../statics/icons/face.webp';
+import instagram from '../statics/icons/ig.webp';
+import twitter from '../statics/icons/twitter.webp';
+import linkedin from '../statics/icons/lik.webp';
+import github from '../statics/icons/gh.webp';
+
 const Header = () => {
   const view = `
  <header class="header" id="header">
       <figure class="header__logo">
-        <img src="../src/images/Assets/hdjesus.png" alt="hdjesus"/>
+        <img src="${logo}" alt="hdjesus"/>
       </figure>
 
       <div class="header__components">
@@ -34,19 +41,11 @@ const Header = () => {
             <div class="redes-enlace">
               <div class="container">
                 <div class="social-list">
-                  <a href=""
-                    ><img src="../src/images/Assets/face.png" alt=""
-                  /></a>
-                  <a href=""
-                    ><img src="../src/images/Assets/ig.png" alt=""
-                  /></a>
-                  <a href=""
-                    ><img src="../src/images/Assets/twitter.png" alt=""
-                  /></a>
-                  <a href=""
-                    ><img src="../src/images/Assets/lik.png" alt=""
-                  /></a>
-                  <a href=""><i class="fab fa-github"></i></a>
+                 <a href="https://chatwith.io/s/5f1a3e1ceeb8d"><img src="${facebook}" alt="facebook"/></a>
+                 <a href=""><img src="${instagram}" alt="instagram" /></a>
+                 <a href=""><img src="${twitter}" alt="twitter" /></a>
+                 <a href=""><img src="${linkedin}" alt="linkedin" /></a>
+                 <a href=""><img src="${github}" alt="github" /></i></a>
                 </div>
               </div>
             </div>
