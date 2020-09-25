@@ -22,9 +22,9 @@ const Footer = () => {
           <div class="footer__flex">
             <nav>
               <ul>
-                <a>Inicio</a>
+                <a id="home-router-footer">Inicio</a>
                 <!-- <a>Sobre mi</a> -->
-                <a>Portafolio</a>
+                <a id="portafolio-router-footer">Portafolio</a>
                 <!--  <a>Blog</a> -->
               </ul>
             </nav>

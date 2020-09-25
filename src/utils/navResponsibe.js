@@ -20,7 +20,7 @@ function NavResponsibe() {
       $navMobile.addEventListener('click', toogleBtnMenu);
     } else {
       // Por el contrario este se desactivara o se removera cuando la pantalla sea mayor a 767px
-      console.log(event.matches);
+
       $navMobile.removeEventListener('click', toogleBtnMenu);
     }
   }

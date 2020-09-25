@@ -9,7 +9,7 @@ const Header = () => {
   const view = `
  <header class="header" id="header">
       <figure class="header__logo">
-        <img src="${logo}" alt="hdjesus"/>
+       <a href="#/"><img src="${logo}" alt="hdjesus"/> </a> 
       </figure>
 
       <div class="header__components">
@@ -20,14 +20,13 @@ const Header = () => {
         <nav class="enlances uno" id="enlances">
           <ul>
             <li>
-              <a href="">
+              <a  id="home-router-header">
                 <i class="fa fa-home" aria-hidden="true"></i> | Inicio</a
               >
             </li>
             <li>
-              <a href="">
-                <i class="fa fa-briefcase" aria-hidden="true" id="portafolio"></i> |
-                Portafolio</a
+              <a id="portafolio-router-header">
+                <i class="fa fa-briefcase" aria-hidden="true" id="portafolio"></i> |  Portafolio</a
               >
             </li>
             <!-- <li>
