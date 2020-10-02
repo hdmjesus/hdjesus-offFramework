@@ -39,6 +39,10 @@
   text-decoration: none;
   font-size: 25px;
   font-family: $font-body;
+  cursor: pointer;
+}
+.enlances ul li a:hover {
+  color: $color-second-dark;
 }
 
 .uno {

@@ -115,3 +115,30 @@
 /*--------------------------------------*\
     BUTTON FORM
 \*--------------------------------------*/
+
+.button-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 120px;
+  right: 20px;
+  cursor: pointer;
+  border: 4px solid transparent;
+  border-radius: 50%;
+  background-color: $primary-variation1;
+  color: $color-body;
+  font-size: 20px;
+  transition: all 300ms ease;
+}
+
+.button-up:hover {
+  transform: scale(1.1);
+  border-color: rgba(0, 0, 0, 0.1);
+}
+
+.display-off {
+  display: none;
+}

@@ -12,7 +12,6 @@ function NavResponsibe() {
       $enlaces.classList.add('dos');
     }
   }
-
   function validation(event) {
     if (event.matches == true) {
       // Este escuchador de eventos solo se activara cuando se cumpla la condicion de el matchMedia sea true y es true cuando la pantalla tiene una ancho menos de 767px.
