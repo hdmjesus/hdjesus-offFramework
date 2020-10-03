@@ -10,7 +10,7 @@ const Tecnologies = () => {
 
   const view = `
   <section class="tecnologies">
-      <div class="container">
+      <div class="tecnologies__container">
         <h2 class="title-level2">Skills</h2>
         <div class="skills" id="skills">
           <div class="skill">

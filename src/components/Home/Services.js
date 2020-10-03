@@ -5,8 +5,8 @@ import aplicationScaling from '../../statics/images/undraw_clean_up_ucm0.svg';
 const Services = () => {
   const view = `
 <section class="services">
-      <div class="container">
-        <h2 class="title-level2">Podras contar con...</h2>
+    <h2 class="title-level2">Podras contar con...</h2>
+      <div class="services__container">
         <article class="service">
           <figure>
             <div class="figure-service"></div>

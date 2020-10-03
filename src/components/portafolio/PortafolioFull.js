@@ -12,12 +12,12 @@ const portafolioFull = () => {
         <div class="proyecto__description">
             <h3 class="proyecto__title">${title}</h3>
             <p>${description}</p>
-    
-        </div>
         <div class="proyecto__buttons">
             <a target="_blank" href="${online}" class="button-primary">Ver Online</a>
             <a target="_blank" href="${github}" class="button-second"> Ver codigo</a>
          </div>
+        </div>
+        
 
          <figure class="proyecto__image">
              <img src="${img}" alt="${title}">

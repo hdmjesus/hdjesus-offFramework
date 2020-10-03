@@ -1,7 +1,7 @@
 function NavResponsibe() {
   const $navMobile = document.getElementById('nav-mobile');
   const $enlaces = document.getElementById('enlances');
-  const ipad = window.matchMedia('Screen and (max-width:767px)');
+  const ipad = window.matchMedia('Screen and (max-width:768px)');
 
   function toogleBtnMenu() {
     if ($enlaces.classList.contains('dos')) {

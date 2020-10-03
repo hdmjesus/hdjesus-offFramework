@@ -1,13 +1,39 @@
 .hero {
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    @include media(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    @include media(desktop-m) {
+      width: 100%;
+      max-width: 1000px;
+    }
+  }
   padding-top: 70px;
   &__curriculum {
     width: 25%;
     margin-top: 10px;
+    @include media(desktop-m) {
+      width: 35%;
+    }
 
     text-transform: uppercase;
     a {
       text-decoration: none;
       color: $color-primary;
+    }
+  }
+
+  &__skills {
+    @include media(tablet) {
+      width: 60%;
+      margin: 0px 20px;
+    }
+    @include media(desktop-m) {
+      width: 40%;
     }
   }
   &__work {
@@ -24,6 +50,12 @@
   display: flex;
   height: auto;
   width: 100%;
+  @include media(tablet) {
+    width: 40%;
+  }
+  @include media(desktop-m) {
+    width: 60%;
+  }
   margin-top: -10px;
   &__image {
     width: 25%;
@@ -39,6 +71,9 @@
       line-height: 30px;
       letter-spacing: 1px;
       color: $color-primary;
+      @include media(desktop-m) {
+        @include font-size(40px);
+      }
     }
     h3 {
       margin-top: 10px;
@@ -50,9 +85,18 @@
       body.dark & {
         color: $color-second-dark;
       }
+      @include media(desktop-s) {
+        @include font-size(20px);
+        line-height: 20px;
+      }
     }
     p {
-      text-align: justify;
+      text-align: left;
+      @include media(desktop-s) {
+        margin-top: 10px;
+        @include font-size(17px);
+        letter-spacing: 1px;
+      }
     }
   }
 }

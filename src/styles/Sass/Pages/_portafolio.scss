@@ -1,6 +1,9 @@
 .banner {
   width: 100%;
   padding-top: 70px;
+  @include media(desktop-s) {
+    height: 400px;
+  }
 
   margin-bottom: 20px;
   &__image {
@@ -11,19 +14,5 @@
       width: 100%;
       object-fit: cover;
     }
-  }
-}
-
-.proyecto {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  height: auto;
-  &__buttons {
-    display: flex;
-    justify-content: start;
-    align-items: center;
-    margin-bottom: 10px;
-    width: 60%;
   }
 }

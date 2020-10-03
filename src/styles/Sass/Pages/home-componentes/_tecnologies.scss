@@ -1,3 +1,15 @@
+.tecnologies {
+  margin-bottom: 50px;
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    @include media(tablet) {
+      width: 50%;
+      max-width: 500px;
+      margin-top: -60px;
+    }
+  }
+}
 %bar {
   display: flex;
   align-items: center;
@@ -16,9 +28,11 @@
   width: 110px;
   font-weight: bold;
   font-size: 13px;
-  color: #ffffff;
+  color: rgb(31, 29, 29);
 }
-
+body.dark %title {
+  color: #fff;
+}
 .javascript {
   background-color: $javascript;
 }
@@ -76,34 +90,31 @@
 .reduxLight {
   background-color: $reduxLight;
 }
-.tecnologies {
-  margin-bottom: 50px;
 
-  .skillbar {
-    @extend %bar;
-    &__title {
-      @extend %title;
-      border-radius: 3px 0px 0px 3px;
+.skillbar {
+  @extend %bar;
+  &__title {
+    @extend %title;
+    border-radius: 3px 0px 0px 3px;
 
-      span {
-        display: block;
-        padding: 0 20px;
-        height: 40px;
-        line-height: 40px;
-      }
-    }
-
-    &__bar {
+    span {
+      display: block;
+      padding: 0 20px;
       height: 40px;
-      border-radius: 3px;
+      line-height: 40px;
     }
-    &__percent {
-      position: absolute;
-      right: 10px;
-      top: 0;
-      font-size: 11px;
-      height: 40px;
-      line-height: 35px;
-    }
+  }
+
+  &__bar {
+    height: 40px;
+    border-radius: 3px;
+  }
+  &__percent {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    font-size: 11px;
+    height: 40px;
+    line-height: 35px;
   }
 }
