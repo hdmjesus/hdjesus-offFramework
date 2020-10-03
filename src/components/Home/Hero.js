@@ -1,12 +1,12 @@
 // import cv from '../../statics/docs/cv:jesus.pdf';
 import imagensita from '../../statics/images/work-home.svg';
-import Jesus from '../../statics/images/yo.png';
+import Jesus from '../../statics/images/yo@2x.png';
 
 const Hero = () => {
   const view = `
 <section class="hero" id="">
       <hr class="line--header" />
-      <div class="container">
+      <div class="hero__container">
         <div class="hero__skills">
           <div class="hero__curriculum">
             <a href="" download="cv: Jesus Hernandez">

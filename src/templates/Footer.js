@@ -35,6 +35,7 @@ const Footer = () => {
       <div class="footer__derechos">
         <div class="container">
           <p>&copy Jesus Hernandez All rights reserved.</p>
+          <p>Sitio web realizado con Javascript vanilla</p>
         </div>
       </div>`;
 

@@ -9,8 +9,9 @@ import headerHiden from './utils/headerHiden';
 
 const homeH = document.getElementById('home-router-header');
 const portafolioH = document.getElementById('portafolio-router-header');
-
 const homeF = document.getElementById('home-router-footer');
+const homedesktop = document.getElementById('home-router-desktop');
+const portafoliodesktop = document.getElementById('projects-router-desktop');
 const portafolioF = document.getElementById('portafolio-router-footer');
 const $enlaces = document.getElementById('enlances');
 
@@ -26,27 +27,29 @@ Portafolio();
 headerHiden();
 
 // Llamado de rutas
-homeH.addEventListener('click', (event) => {
-  event.preventDefault();
-  router._loadRoute('');
-  skills();
-  Portafolio();
-  headerHiden();
-  //La clase 'dos' es una clase que abre el menu
-  //La clase 'uno' es una clase que remueve el menu
-  $enlaces.classList.remove('dos');
-  $enlaces.classList.add('uno');
-});
-portafolioH.addEventListener('click', (event) => {
-  event.preventDefault();
-  router._loadRoute('portafolio');
-  portafolioFull();
-  headerHiden();
-  //La clase 'dos' es una clase que abre el menu
-  //La clase 'uno' es una clase que r emueve el menu
-  $enlaces.classList.remove('dos');
-  $enlaces.classList.add('uno');
-});
+homeH &&
+  homedesktop.addEventListener('click', (event) => {
+    event.preventDefault();
+    router._loadRoute('');
+    skills();
+    Portafolio();
+    headerHiden();
+    //La clase 'dos' es una clase que abre el menu
+    //La clase 'uno' es una clase que remueve el menu
+    $enlaces.classList.remove('dos');
+    $enlaces.classList.add('uno');
+  });
+portafolioH &&
+  portafoliodesktop.addEventListener('click', (event) => {
+    event.preventDefault();
+    router._loadRoute('portafolio');
+    portafolioFull();
+    headerHiden();
+    //La clase 'dos' es una clase que abre el menu
+    //La clase 'uno' es una clase que r emueve el menu
+    $enlaces.classList.remove('dos');
+    $enlaces.classList.add('uno');
+  });
 
 homeF.addEventListener('click', (event) => {
   event.preventDefault();

@@ -53,9 +53,9 @@ const Header = () => {
 
         <nav class="header--nav-desktop">
           <ul>
-            <li><a href="">Inicio</a></li>
+            <li><a id="home-router-desktop">Inicio</a></li>
             <!-- <li><a href="">Sobre mi</a></li> -->
-            <li><a href="">Portafolio</a></li>
+            <li><a id="projects-router-desktop">Portafolio</a></li>
             <!-- <li><a href="">Blog</a></li> -->
           </ul>
         </nav>

@@ -1,32 +1,59 @@
 .services {
-	margin-top: 40px;
-	position: relative;
-	.service {
-		.figure-service {
-			display: block;
-			width: 190px;
-			height: 100px;
-			position: absolute;
-			left: 0;
-			border-radius: 0 64px 64px 0;
-			background-color: $primary-variation1;
-			opacity: 1;
-		}
-		&__image {
-			display: inline-block;
-			position: relative;
-			width: 200px;
-			height: 100px;
-			img {
-				position: absolute;
-				left: 30px;
-				top: 25px;
-			}
-		}
-		&__description {
-			text-align: center;
-			padding: 20px;
-			margin-top: 30px;
-		}
-	}
+  &__container {
+    width: 90%;
+    margin: 0 auto;
+    @include media(tablet) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      max-width: 800px;
+    }
+    @include media(desktop-s) {
+      width: 90%;
+      max-width: 1200px;
+      flex-wrap: nowrap;
+    }
+  }
+  margin-top: 40px;
+  position: relative;
+  .service {
+    @include media(tablet) {
+      width: 40%;
+      height: 380px;
+      margin-left: 20px;
+      position: relative;
+    }
+    .figure-service {
+      display: block;
+      width: 190px;
+      height: 100px;
+      position: absolute;
+      left: 0;
+      border-radius: 0 64px 64px 0;
+      background-color: $primary-variation1;
+      opacity: 1;
+      @include media(tablet) {
+      }
+    }
+    &__image {
+      display: inline-block;
+      position: relative;
+      width: 200px;
+      height: 100px;
+      img {
+        position: absolute;
+        left: 30px;
+        top: 25px;
+      }
+    }
+    &__description {
+      text-align: center;
+      padding: 20px;
+      margin-top: 30px;
+      @include media(tablet) {
+        padding: 20px 0 20px 0;
+      }
+    }
+  }
 }
