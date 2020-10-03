@@ -40,9 +40,11 @@
   font-size: 25px;
   font-family: $font-body;
   cursor: pointer;
+  user-select: none;
 }
 .enlances ul li a:hover {
   color: $color-second-dark;
+  user-select: none;
 }
 
 .uno {

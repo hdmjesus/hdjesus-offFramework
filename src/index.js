@@ -26,31 +26,52 @@ Portafolio();
 //CONFIGURACION DE HIDEN-SCROLL DEL HEADER Y BUTTON-UP
 headerHiden();
 
-// Llamado de rutas
-homeH &&
-  homedesktop.addEventListener('click', (event) => {
-    event.preventDefault();
-    router._loadRoute('');
-    skills();
-    Portafolio();
-    headerHiden();
-    //La clase 'dos' es una clase que abre el menu
-    //La clase 'uno' es una clase que remueve el menu
-    $enlaces.classList.remove('dos');
-    $enlaces.classList.add('uno');
-  });
-portafolioH &&
-  portafoliodesktop.addEventListener('click', (event) => {
-    event.preventDefault();
-    router._loadRoute('portafolio');
-    portafolioFull();
-    headerHiden();
-    //La clase 'dos' es una clase que abre el menu
-    //La clase 'uno' es una clase que r emueve el menu
-    $enlaces.classList.remove('dos');
-    $enlaces.classList.add('uno');
-  });
+// Llamado de rutas DESKTOP
+homeH.addEventListener('click', (event) => {
+  event.preventDefault();
+  router._loadRoute('');
+  skills();
+  Portafolio();
+  headerHiden();
+  //La clase 'dos' es una clase que abre el menu
+  //La clase 'uno' es una clase que remueve el menu
+  $enlaces.classList.remove('dos');
+  $enlaces.classList.add('uno');
+});
+portafolioH.addEventListener('click', (event) => {
+  event.preventDefault();
+  router._loadRoute('portafolio');
+  portafolioFull();
+  headerHiden();
+  //La clase 'dos' es una clase que abre el menu
+  //La clase 'uno' es una clase que r emueve el menu
+  $enlaces.classList.remove('dos');
+  $enlaces.classList.add('uno');
+});
+// Llamado de rutas MOBILE
+homedesktop.addEventListener('click', (event) => {
+  event.preventDefault();
+  router._loadRoute('');
+  skills();
+  Portafolio();
+  headerHiden();
+  //La clase 'dos' es una clase que abre el menu
+  //La clase 'uno' es una clase que remueve el menu
+  $enlaces.classList.remove('dos');
+  $enlaces.classList.add('uno');
+});
+portafoliodesktop.addEventListener('click', (event) => {
+  event.preventDefault();
+  router._loadRoute('portafolio');
+  portafolioFull();
+  headerHiden();
+  //La clase 'dos' es una clase que abre el menu
+  //La clase 'uno' es una clase que r emueve el menu
+  $enlaces.classList.remove('dos');
+  $enlaces.classList.add('uno');
+});
 
+// Llamado de rutas FOOTER
 homeF.addEventListener('click', (event) => {
   event.preventDefault();
   router._loadRoute('');
