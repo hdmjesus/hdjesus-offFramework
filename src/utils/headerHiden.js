@@ -24,8 +24,10 @@ function hidenHeader() {
 
     if (scrollTop >= 2039) {
       $whatappButton.classList.add('display-off');
+      $facebookButton.classList.add('display-off');
     } else {
       $whatappButton.classList.remove('display-off');
+      $facebookButton.classList.remove('display-off');
     }
     if (destopS.matches) {
       console.log('sisa');
