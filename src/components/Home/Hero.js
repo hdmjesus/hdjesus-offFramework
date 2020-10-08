@@ -31,7 +31,7 @@ const Hero = () => {
 
             <p>
               Hola, me llamo Jesus Hernandez y soy Desarrollador Front-End, mi
-              reto es resolver problemas ambientales con tegnologia.
+              reto es resolver problemas ambientales con tecnologia.
             </p>
 
             <!-- <div class="button-service" >

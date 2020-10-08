@@ -100,3 +100,7 @@ h4 {
 img {
   pointer-events: none;
 }
+
+body.dark .hero__curriculum h6 {
+  color: $color-second-dark;
+}

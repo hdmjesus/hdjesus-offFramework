@@ -20,7 +20,7 @@ const Services = () => {
           </figure>
 
           <div class="service__description">
-            <h4>RESPONSIBE DESING</h4>
+            <h4>RESPONSIVE DESING</h4>
             <p>
               El Responsive Design o diseño adaptativo, es la técnica que se usa
               en la actualidad para tener una misma web adaptada a las
