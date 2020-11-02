@@ -1,5 +1,5 @@
 .enlances {
-  z-index: 2;
+  z-index: -1;
   position: fixed;
   height: 100vh;
   width: 100%;
@@ -22,9 +22,6 @@
 }
 
 .enlances ul {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   margin: auto;
   text-align: center;
 }
@@ -55,4 +52,12 @@
 .dos {
   -webkit-clip-path: circle(150% at 100% 0%);
   clip-path: circle(150% at 100% 0%);
+}
+
+.list-nav {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: auto;
+  text-align: center;
 }

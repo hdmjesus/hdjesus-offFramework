@@ -7,65 +7,63 @@ import github from '../statics/icons/gh.webp';
 
 const Header = () => {
   const view = `
- <header class="header" id="header">
-      <figure class="header__logo">
-       <a href="#/"><img src="${logo}" alt="hdjesus"/> </a> 
-      </figure>
+   <header class="header" id="header">
+    <figure class="header__logo">
+      <a href="/"><img src="${logo}" width="50px" height="50px" alt="Logo personal" /> </a>
+    </figure>
 
-      <div class="header__components">
-        <nav class="header--nav-mobile">
-          <p id="nav-mobile"><i class="fas fa-bars"></i></p>
-        </nav>
+    <div class="header__components">
+      <nav class="header--nav-mobile" arial-label="menu"  >
+        <p id="nav-mobile"><i class="fas fa-bars"></i></p>
+    <nav class="enlances uno" id="enlances">
+        <ul class="list-nav" id="list-nav-mobile">
+          <li>
+            <a id="home-router-header">
+              <i class="fa fa-home"></i> | Inicio</a>
+          </li>
+          <li>
+            <a id="portafolio-router-header">
+              <i class="fa fa-briefcase"  id="portafolio"></i> | Portafolio</a>
+          </li>
 
-        <nav class="enlances uno" id="enlances">
-          <ul>
-            <li>
-              <a id="home-router-header">
-                <i class="fa fa-home" aria-hidden="true"></i> | Inicio</a
-              >
-            </li>
-            <li>
-              <a id="portafolio-router-header">
-                <i class="fa fa-briefcase" aria-hidden="true" id="portafolio"></i> |  Portafolio</a
-              >
-            </li>
-            <!-- <li>
-              <a href="">
-                <i class="fa fa-rss" aria-hidden="true"></i> | Blog</a
-              >
-            </li> -->
-          </ul>
+        </ul>
 
-          <div class="redes">
-            <div class="redes-enlace">
-              <div class="container">
-                <div class="social-list">
-                 <a href="https://chatwith.io/s/5f1a3e1ceeb8d"><img src="${facebook}" alt="facebook"/></a>
-                 <a href=""><img src="${instagram}" alt="instagram" /></a>
-                 <a href=""><img src="${twitter}" alt="twitter" /></a>
-                 <a href=""><img src="${linkedin}" alt="linkedin" /></a>
-                 <a href=""><img src="${github}" alt="github" /></i></a>
-                </div>
-              </div>
+        <div class="redes">
+          <div class="redes-enlace">
+            <div class="container">
+              <ul class="social-list" >
+                <li ><a href="https://www.facebook.com/hernandez41" target=_blank><img
+                      src="${facebook}" width="35px" height="37px" alt="facebook Jesus" /></a></li>
+                <li ><a href="https://www.instagram.com/hdmjesus" target=_blank><img
+                      src="${instagram}"  width="35px" height="37px" alt="instagram Jesus" /></a></li>
+                <li ><a href="https://twitter.com/HDMjesus" target=_blank><img src="${twitter}"
+                      width="35px" height="37px" alt="twitter Jesus" /></a></li>
+                <li ><a href="https://www.linkedin.com/in/hdmjesus/" target=_blank><img
+                      src="${linkedin}"  width="35px" height="37px" alt="linkedin Jesus" /></a></li>
+                <li ><a href="https://github.com/hdmjesus" target=_blank><img src="${github}"
+                      width="35px" height="37px" alt="github Jesus" /></i></a></li>
+              </ul>
             </div>
           </div>
-        </nav>
+        </div>
+      </nav>
+      </nav>
 
-        <nav class="header--nav-desktop">
-          <ul>
-            <li><a id="home-router-desktop">Inicio</a></li>
-            <!-- <li><a href="">Sobre mi</a></li> -->
-            <li><a id="projects-router-desktop">Portafolio</a></li>
-            <!-- <li><a href="">Blog</a></li> -->
-          </ul>
-        </nav>
+     
 
-        <button class="switch" id="switch">
-          <span><i class="fas fa-sun"></i></span>
-          <span><i class="fas fa-moon"></i></span>
-        </button>
-      </div>
-    </header>
+      <nav class="header--nav-desktop">
+        <ul >
+          <li aria-label="Inicio"> <button id="home-router-desktop"><a tabindex="0" >Inicio</a></button>  </li>
+          <li aria-label="Proyectos"> <button id="projects-router-desktop"><a tabindex="0">Portafolio</a></button>  </li>
+        </ul>
+      </nav>
+
+      <button class="switch" id="switch" aria-label="Dark mode button" tabindex="0">
+        <span><i class="fas fa-sun"></i></span>
+        <span><i class="fas fa-moon"></i></span>
+      </button>
+    </div>
+  </header>
 `;
 
   return view;

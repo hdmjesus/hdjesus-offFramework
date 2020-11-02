@@ -1,7 +1,7 @@
 function Facebook() {
   const view = `
  <!-- Load Facebook SDK for JavaScript -->
-      <div id="fb-root"></div>
+      <div id="fb-root" aria-label="facebook messenger"></div>
       <script>
         window.fbAsyncInit = function() {
           FB.init({

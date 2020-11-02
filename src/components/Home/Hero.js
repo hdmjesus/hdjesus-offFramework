@@ -4,44 +4,37 @@ import Jesus from '../../statics/images/yo@2x.png';
 
 const Hero = () => {
   const view = `
-<section class="hero" id="">
-      <hr class="line--header" />
-      <div class="hero__container">
-        <div class="hero__skills">
-          <div class="hero__curriculum">
-            <a href="" download="cv: Jesus Hernandez">
-              <h6>Hoja de vida</h6>
-            </a>
-          </div>
-
-          <figure class="hero__work">
-            <img src="${imagensita}" alt="Espacio de trabajo" />
-          </figure>
+ <section class="hero" id="">
+    <hr class="line--header" />
+    <div class="hero__container">
+      <article class="hero__skills" >
+        <div class="hero__curriculum" aria-label="Curriculum">
+          <a href="" download="cv: Jesus Hernandez">
+            <p>Hoja de vida</p>
+          </a>
         </div>
 
-        <div class="jesusH">
-          <figure class="jesusH__image">
-            <img src="${Jesus}" alt="Jesus Hernandez" />
-          </figure>
+        <figure class="hero__work" role="banner">
+          <img src="${imagensita}"  alt="Espacio de trabajo" />
+        </figure>
+      </article>
 
-          <div class="jesusH__description">
-            <h1>Jesús Hernández</h1>
-            <h3>Frontend Developer</h3>
-            <h3>Tecnico Ambiental</h3>
+      <article class="jesusH">
+        <figure class="jesusH__image">
+          <img src="${Jesus}" alt="Jesus Hernandez" />
+        </figure>
 
-            <p>
-              Hola, me llamo Jesus Hernandez y soy Desarrollador Front-End, mi
-              reto es resolver problemas ambientales con tecnologia.
-            </p>
-
-            <!-- <div class="button-service" >
-
-                        <a href="./form.html" id="services">Hagamos tu proyecto</a>
-                    </div> -->
-          </div>
+        <div class="jesusH__description" tabindex="0">
+          <h1>Jesús Hernández</h1>
+          <h2>Frontend Developer</h2>
+          <h2>Tecnico Ambiental</h2>     <p>
+          Soy Frontend Developer y deseo dar soluciones ambientales ♻️ con ayuda de la tecnología💻.
+          </p>
         </div>
-      </div>
-    </section>
+
+      </article>
+    </div>
+  </section>
 `;
   return view;
 };
