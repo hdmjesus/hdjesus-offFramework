@@ -4,7 +4,7 @@ import aplicationScaling from '../../statics/images/undraw_clean_up_ucm0.svg';
 
 const Services = () => {
   const view = `
-<section class="services">
+<section class="services" tabindex="0">
     <h2 class="title-level2">Podras contar con...</h2>
       <div class="services__container">
         <article class="service">
@@ -20,7 +20,7 @@ const Services = () => {
           </figure>
 
           <div class="service__description">
-            <h4>RESPONSIVE DESING</h4>
+            <h3>RESPONSIVE DESING</h3>
             <p>
               El Responsive Design o diseño adaptativo, es la técnica que se usa
               en la actualidad para tener una misma web adaptada a las
@@ -43,7 +43,7 @@ const Services = () => {
           </figure>
 
           <div class="service__description">
-            <h4>CODIGO SEMANTICO</h4>
+            <h3>CODIGO SEMANTICO</h3>
             <p>
               Los motores de búsqueda analizan el código para saber qué clase de
               contenido muestran y así, saber cómo mostrarlo.
@@ -64,7 +64,7 @@ const Services = () => {
           </figure>
 
           <div class="service__description">
-            <h4>APLICACIONES ESCALABLES</h4>
+            <h3>APLICACIONES ESCALABLES</h3>
             <p>
               Se asegura que su aplicacion pueda crecer sin verse comprometido
               el rendimiento de la misma.

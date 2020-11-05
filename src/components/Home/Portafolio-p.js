@@ -14,7 +14,7 @@ function Portafolio() {
       
 
          <figure class="proyecto__image">
-             <img src="${img}" alt="${title}">
+             <img src="${img}" width="300" height="230" alt="${title}">
          </figure>
      </article>
 `;

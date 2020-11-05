@@ -16,6 +16,11 @@
   &__curriculum {
     width: 25%;
     margin-top: 10px;
+    p {
+      font-family: $font-title;
+      font-weight: bold;
+      font-size: 12px;
+    }
     @include media(desktop-m) {
       width: 35%;
     }
@@ -49,7 +54,8 @@
 .jesusH {
   display: flex;
   height: auto;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   @include media(tablet) {
     width: 40%;
   }
@@ -75,13 +81,13 @@
         @include font-size(40px);
       }
     }
-    h3 {
+    h2 {
       margin-top: 10px;
       margin-bottom: 5px;
       letter-spacing: 1px;
       color: $color-second;
       transition: 0.3s ease all;
-      @include font-size(14px);
+      @include font-size(15px);
       body.dark & {
         color: $color-second-dark;
       }

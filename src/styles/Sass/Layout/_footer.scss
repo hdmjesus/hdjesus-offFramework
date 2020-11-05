@@ -1,10 +1,13 @@
+footer {
+  background-color: $gray-light;
+}
 .footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   height: 150px;
-  background-color: $gray-medium;
+
   color: $color-body;
 
   &__nav {
@@ -12,10 +15,11 @@
     padding: 10px;
     text-align: center;
     ul {
+      display: flex;
       a {
         display: inline-block;
         padding: 5px;
-        color: $color-primary;
+        color: $color-second;
         font-weight: 700;
         cursor: pointer;
         user-select: none;
@@ -57,8 +61,17 @@
 }
 .footer_redes {
   width: 100%;
+  padding-top: 20px;
 }
 
 body.dark .footer__nav a {
   color: #fff;
+}
+
+Footer ul li {
+  list-style: none;
+}
+
+body.dark footer {
+  background-color: $button-night;
 }

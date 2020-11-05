@@ -14,7 +14,9 @@ $font-body: 'Ubuntu', sans-serif;
 \*------------------------------------*/
 
 $color-body: #f6f9fc;
-$color-primary: #00c02acc;
+// $color-primary: #00c02acc;
+$color-primary: #4917b0;
+
 $color-second: #32325d;
 $color-second-dark: #23bceb;
 
@@ -86,10 +88,15 @@ h2 {
     color: $color-second-dark;
   }
 }
+h1 {
+  body.dark & {
+    color: $color-second-dark;
+  }
+}
 
 h3 {
   body.dark & {
-    color: $color-primary;
+    color: $white;
   }
 }
 h4 {
@@ -101,6 +108,6 @@ img {
   pointer-events: none;
 }
 
-body.dark .hero__curriculum h6 {
+body.dark .hero__curriculum p {
   color: $color-second-dark;
 }

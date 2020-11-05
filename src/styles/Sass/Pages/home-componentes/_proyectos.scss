@@ -31,6 +31,7 @@
   }
   &__image {
     width: 300px;
+
     @include media(desktop-s) {
     }
     img {

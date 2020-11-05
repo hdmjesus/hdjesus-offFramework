@@ -3,11 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content=" Soy Frontend Developer y deseo dar soluciones ambientales ♻️ con ayuda de la tecnología💻."
+    />
+    <meta name="robots" content="index" />
+    <meta name="robots" content="follow" />
     <link
       href="https://fonts.googleapis.com/css2?family=Marmelad&family=Ubuntu:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
     <script
+      defer
+      rel="dns-prefetch"
       src="https://kit.fontawesome.com/4f82ce23a4.js"
       crossorigin="anonymous"
     ></script>
@@ -17,10 +25,13 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
+      rel="preconnect"
+      rel="dns-prefetch"
       src="https://www.googletagmanager.com/gtag/js?id=UA-154775224-1"
     ></script>
-    <script>
+    <script defer>
       window.dataLayer = window.dataLayer || [];
+
       function gtag() {
         dataLayer.push(arguments);
       }
@@ -29,6 +40,7 @@
       gtag('config', 'UA-154775224-1');
     </script>
   </head>
+
   <body>
     <header id="root-h"></header>
     <!-- Load Facebook SDK for JavaScript -->
@@ -63,6 +75,6 @@
     ></div>
     <main id="main"></main>
 
-    <footer id="footer" style="background-color: #c4c4cab8"></footer>
+    <footer id="footer"></footer>
   </body>
 </html>
