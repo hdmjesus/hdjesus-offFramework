@@ -7,8 +7,8 @@ function Portafolio() {
             <p>${description}</p>
 
            <div class="proyecto__buttons">
-            <a target="_blank" href="${online}" class="button-primary">Ver Online</a>
-            <a target="_blank" href="${github}" class="button-second"> Ver codigo</a>
+            <a rel="noopener" rel="noreferrer"  target="_blank" href="${online}" class="button-primary">Ver Online</a>
+            <a rel="noopener" rel="noreferrer"  target="_blank" href="${github}" class="button-second"> Ver codigo</a>
            </div>
         </div>
       
