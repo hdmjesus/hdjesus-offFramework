@@ -32,15 +32,15 @@ const Header = () => {
           <div class="redes-enlace">
             <div class="container">
               <ul class="social-list" >
-                <li ><a href="https://www.facebook.com/hernandez41" target=_blank><img
+                <li ><a href="https://www.facebook.com/hernandez41" rel="noopener" rel="noreferrer" target=_blank><img
                       src="${facebook}" width="35px" height="37px" alt="facebook Jesus" /></a></li>
-                <li ><a href="https://www.instagram.com/hdmjesus" target=_blank><img
+                <li ><a href="https://www.instagram.com/hdmjesus" rel="noopener" rel="noreferrer"  target=_blank><img
                       src="${instagram}"  width="35px" height="37px" alt="instagram Jesus" /></a></li>
-                <li ><a href="https://twitter.com/HDMjesus" target=_blank><img src="${twitter}"
+                <li ><a href="https://twitter.com/HDMjesus" rel="noopener" rel="noreferrer"  target=_blank><img src="${twitter}"
                       width="35px" height="37px" alt="twitter Jesus" /></a></li>
-                <li ><a href="https://www.linkedin.com/in/hdmjesus/" target=_blank><img
+                <li ><a href="https://www.linkedin.com/in/hdmjesus/" rel="noopener" rel="noreferrer"  target=_blank><img
                       src="${linkedin}"  width="35px" height="37px" alt="linkedin Jesus" /></a></li>
-                <li ><a href="https://github.com/hdmjesus" target=_blank><img src="${github}"
+                <li ><a href="https://github.com/hdmjesus" rel="noopener" rel="noreferrer"  target=_blank><img src="${github}"
                       width="35px" height="37px" alt="github Jesus" /></i></a></li>
               </ul>
             </div>
