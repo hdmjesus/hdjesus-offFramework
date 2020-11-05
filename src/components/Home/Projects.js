@@ -1,7 +1,7 @@
 const Projects = () => {
   const view = `
     <section class="proyectos" id="proyectos">
-      <h2 class="title-level2">Proyectos</h2>
+      <h2 class="title-level2">Proyectos recientes</h2>
       <div class="proyectos__container" id="proyectosHome"></div>
     </section>
 
